@@ -1,0 +1,11 @@
+USE expensetransactions;
+
+INSERT INTO tbl_expenses
+(expense_id, name, note, category, amount, date, created_at, updated_at)
+VALUES
+(uuid(), 'Electricity bill', 'electricity bill', 'Utilities', 500.00, curdate(), utc_timestamp(), utc_timestamp()),
+ (uuid(), 'Water bill', 'water bill', 'Utilities', 1000.00, curdate(), utc_timestamp(), utc_timestamp());
+
+ select * FROM tbl_expenses;
+
+ DESC tbl_expenses;
